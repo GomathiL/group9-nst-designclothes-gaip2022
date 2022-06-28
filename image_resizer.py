@@ -4,22 +4,13 @@ import os
 import numpy as np
 from PIL import Image
 
-# Defining an image size and image channel
-# We are going to resize all our images to 128X128 size and since our images are colored images
-# We are setting our image channels to 3 (RGB)
-
 IMAGE_SIZE = 128
 IMAGE_CHANNELS = 3
-IMAGE_DIR = '/Users/yashgupta/Desktop/GANS/resized_dataset'
+IMAGE_DIR = '/Users/Gomu/Downloads/Neural-Style-Transfer/d2'
 
-# Defining image dir path. Change this if you have different directory
 images_path = IMAGE_DIR
 
 training_data = []
-
-# Iterating over the images inside the directory and resizing them using
-# Pillow's resize method.
-print('resizing...')
 
 count = 1
 for filename in os.listdir(images_path):
