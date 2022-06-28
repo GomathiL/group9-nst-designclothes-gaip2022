@@ -21,10 +21,10 @@ for filename in os.listdir(images_path):
     print(f'{path}', count)
     count += 1
 
-print('np reshaping...')
+print('Reshaping of np in process.')
 training_data = np.reshape(
     training_data, (-1, IMAGE_SIZE, IMAGE_SIZE, IMAGE_CHANNELS))
 training_data = training_data / 127.5 - 1
 
-print('saving file...')
-np.save('art_data.npy', training_data)
+print('Saving File in Process')
+np.save('pattern-data.npy', training_data)
